@@ -1,0 +1,7 @@
+{
+  "extends": "@sanity/eslint-config-studio",
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false
+  }
+}
