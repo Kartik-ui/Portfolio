@@ -24,8 +24,12 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
 import profile from "../assets/profile.png";
+import kvPortfolio from "../assets/kv_portfolio.png";
+import kvPortfolio2 from "../assets/kv.png";
+import kvPortfolio3 from "../assets/kv_portfolio3.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import kartik_logo from "../assets/kartik_logo.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -61,8 +65,12 @@ export default {
   about03,
   about04,
   profile,
+  kvPortfolio,
+  kvPortfolio2,
+  kvPortfolio3,
   circle,
   logo,
+  kartik_logo,
   adidas,
   amazon,
   asus,

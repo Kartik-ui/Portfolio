@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { IoIosCloudDownload } from "react-icons/io";
 
 import "./Navbar.scss";
 import { images } from "../../constants";
+import resume from "../../assets/resume/Kartik_Latest_Resume.pdf";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <img src={images.kartik_logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "testimonials", "contact"].map(
@@ -22,6 +24,11 @@ const Navbar = () => {
           )
         )}
       </ul>
+      <a className="app__navbar-button" href={resume} download="Resume">
+        <button className="resume">
+          <IoIosCloudDownload /> Resume
+        </button>
+      </a>
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
@@ -45,6 +52,14 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <a href={resume} download="Resume">
+                <button className="resume-mobile">
+                  <IoIosCloudDownload
+                    style={{ height: "25px", width: "25px" }}
+                  />{" "}
+                  Resume
+                </button>
+              </a>
             </ul>
           </motion.div>
         )}

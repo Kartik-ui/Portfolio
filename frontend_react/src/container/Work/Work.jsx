@@ -100,7 +100,7 @@ const Work = () => {
                   {work.description}
                 </p>
                 <div className="app__work-tag app__flex">
-                  <p className="p-text">{work.tags[0]}</p>
+                  <p className="p-text">{work?.tags?.[0]}</p>
                 </div>
               </div>
             </div>

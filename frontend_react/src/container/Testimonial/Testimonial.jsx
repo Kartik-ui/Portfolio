@@ -76,7 +76,17 @@ const Testimonial = () => {
                 transition={{ duration: 0.5, type: "tween" }}
                 key={brand._id}
               >
-                <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+                <img
+                  src={urlFor(brand.imgUrl)}
+                  onClick={() =>
+                    window.open(
+                      "https://isourse.com/",
+                      "_blank",
+                      "noopener, noreferrer"
+                    )
+                  }
+                  alt={brand.name}
+                />
               </motion.div>
             ))}
           </div>
