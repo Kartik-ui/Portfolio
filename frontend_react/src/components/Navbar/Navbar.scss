@@ -78,6 +78,10 @@
   }
 }
 
+.app__navbar-button {
+  text-decoration: none;
+}
+
 .resume {
   display: flex;
   gap: 5px;
@@ -131,6 +135,10 @@
   justify-content: center;
   align-items: center;
   background: var(--secondary-color);
+
+  a {
+    text-decoration: none;
+  }
 
   svg {
     width: 70%;

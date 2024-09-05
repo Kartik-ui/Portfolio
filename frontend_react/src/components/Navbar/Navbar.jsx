@@ -1,11 +1,11 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { motion } from "framer-motion";
 import { IoIosCloudDownload } from "react-icons/io";
 
-import "./Navbar.scss";
+import resume from "../../assets/resume/Kartik_Vishwakarma.pdf";
 import { images } from "../../constants";
-import resume from "../../assets/resume/Kartik_Latest_Resume.pdf";
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,7 +24,11 @@ const Navbar = () => {
           )
         )}
       </ul>
-      <a className="app__navbar-button" href={resume} download="Resume">
+      <a
+        className="app__navbar-button"
+        href={resume}
+        download="Kartik_Vishwakarma"
+      >
         <button className="resume">
           <IoIosCloudDownload /> Resume
         </button>
@@ -52,11 +56,11 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <a href={resume} download="Resume">
+              <a href={resume} download="Kartik_Vishwakarma">
                 <button className="resume-mobile">
                   <IoIosCloudDownload
                     style={{ height: "25px", width: "25px" }}
-                  />{" "}
+                  />
                   Resume
                 </button>
               </a>
