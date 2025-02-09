@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 import { images } from "../../constants";
-import "./Header.scss";
 import { AppWrap } from "../../wrapper";
+import "./Header.scss";
 
 const scaleVariants = {
   whileInView: {
@@ -27,12 +28,19 @@ const Header = () => {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Kartik</h1>
+              <h1 className="head-text heading">Kartik</h1>
             </div>
           </div>
           <div className="tag-cmp app_flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Gamer</p>
+            <p className="p-text">A</p>
+            <Typewriter
+              options={{
+                strings: ["Frontend", "Backend", "Full-Stack", "MERN Stack"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            <p className="p-text">Developer</p>
           </div>
         </div>
       </motion.div>
@@ -41,7 +49,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.kvPortfolio3} alt="profile_bg" />
+        <img src={images.smiley2} alt="profile_bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}

@@ -3,7 +3,6 @@ import { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { IoIosCloudDownload } from "react-icons/io";
 
-import resume from "../../assets/resume/Kartik_Vishwakarma.pdf";
 import { images } from "../../constants";
 import "./Navbar.scss";
 
@@ -26,8 +25,11 @@ const Navbar = () => {
       </ul>
       <a
         className="app__navbar-button"
-        href={resume}
-        download="Kartik_Vishwakarma"
+        href={
+          "https://drive.google.com/file/d/1xVJIOQjJOaZNeRS3yAGFva0U7-a7zquc/view?usp=sharing"
+        }
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <button className="resume">
           <IoIosCloudDownload /> Resume
@@ -56,7 +58,13 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <a href={resume} download="Kartik_Vishwakarma">
+              <a
+                href={
+                  "https://drive.google.com/file/d/1xVJIOQjJOaZNeRS3yAGFva0U7-a7zquc/view?usp=sharing"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="resume-mobile">
                   <IoIosCloudDownload
                     style={{ height: "25px", width: "25px" }}
