@@ -1,31 +1,8 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import "./About.scss";
-import { urlFor, client } from "../../client";
+import { useEffect, useState } from "react";
+import { client, urlFor } from "../../client";
 import { AppWrap, MotionWrap } from "../../wrapper";
-
-// const abouts = [
-//   {
-//     title: "Web Development",
-//     description: "I am a good web developer",
-//     imgUrl: images?.about01,
-//   },
-//   {
-//     title: "MERN Stack Development",
-//     description: "I am a good mern stack developer",
-//     imgUrl: images?.about02,
-//   },
-//   {
-//     title: "Frontend Development",
-//     description: "I am a good frontend developer",
-//     imgUrl: images?.about03,
-//   },
-//   {
-//     title: "Backend Development",
-//     description: "I am a good backend developer",
-//     imgUrl: images?.about04,
-//   },
-// ];
+import "./About.scss";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -36,8 +13,8 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I Know That <span>Good Development</span> <br /> means{" "}
-        <span>Good Business</span>
+        Quality <span>Development</span> <br /> Drives{" "}
+        <span>Business Success</span>
       </h2>
       <div className="app__profiles">
         {abouts?.map((about, index) => (

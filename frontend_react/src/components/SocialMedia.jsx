@@ -1,4 +1,4 @@
-import { BsTwitter, BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialMedia = () => {
@@ -17,7 +17,7 @@ const SocialMedia = () => {
       );
     } else if (type === "twitter") {
       window.open(
-        "https://twitter.com/KARTIKV78299182",
+        "https://twitter.com/kartik_v_001",
         "_blank",
         "noopener, noreferrer"
       );

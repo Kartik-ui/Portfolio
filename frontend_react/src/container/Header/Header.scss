@@ -76,6 +76,15 @@
     }
   }
 
+  .Typewriter__wrapper {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .Typewriter__cursor {
+    color: red;
+  }
+
   span {
     font-size: 2.5rem;
 
